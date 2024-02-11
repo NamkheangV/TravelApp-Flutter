@@ -55,7 +55,7 @@ class MyHome extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(20),
             child: Text(
-              "หมู่บ้าน ชิราคาวาโกะ เป็นหมู่บ้านชาวนาที่เก่าแก่แห่งหนึ่งในญี่ปุ่น ตั้งอยู่ท่ามกลางหุบเขาในเขตจังหวัดกิฟุ (Gifu) ทางตอนกลางของเกาะฮอนชู (Honshu) ประเทศญี่ปุ่น เป็นหมู่บ้านที่อุดมสมบูรณ์ไปด้วยความงดงามทางธรรมชาติ จุดสำคัญของการมาเยี่ยมชมคือการได้ดื่มด่ำกับความงดงามของหมู่บ้าน และได้เห็นรูปทรงของบ้านแต่ละหลังที่เป็นสถาปัตยกรรมแบบญี่ปุ่นดั้งเดิมที่เรียกกันว่า “กัสโชสึคุริ (Gassho-zukuri)” ",
+              "หมู่บ้าน ชิราคาวาโกะ เป็นหมู่บ้านชาวนาที่เก่าแก่แห่งหนึ่งในญี่ปุ่น ตั้งอยู่ท่ามกลางหุบเขาในเขตจังหวัดกิฟุ (Gifu) ทางตอนกลางของเกาะฮอนชู (Honshu) ประเทศญี่ปุ่น เป็นหมู่บ้านที่อุดมสมบูรณ์ไปด้วยความงดงามทางธรรมชาติ จุดสำคัญของการมาเยี่ยมชมคือการได้ดื่มด่ำกับความงดงามของหมู่บ้าน และได้เห็นรูปทรงของบ้านแต่ละหลังที่เป็นสถาปัตยกรรมแบบญี่ปุ่นดั้งเดิมเรียกว่า “กัสโชสึคุริ (Gassho-zukuri)” ",
               style: GoogleFonts.notoSansThai(
                   fontSize: 16, fontWeight: FontWeight.normal),
             ),
@@ -150,31 +150,6 @@ class MyHome extends StatelessWidget {
               ],
             ),
           ),
-
-          // Other Picture
-          // Container(
-          //   padding: const EdgeInsets.all(10),
-          //   height: 300,
-          //   width: double.maxFinite,
-          //   child: ListView.builder(
-          //       itemCount: 3,
-          //       scrollDirection: Axis.horizontal,
-          //       itemBuilder: (context, index) {
-          //         return Container(
-          //           margin: const EdgeInsets.all(5),
-          //           width: 200,
-          //           height: 100,
-          //           decoration: BoxDecoration(
-          //             borderRadius: BorderRadius.circular(20),
-          //             color: Colors.white,
-          //             image: const DecorationImage(
-          //                 image: NetworkImage(
-          //                     'https://www.ananda.co.th/blog/thegenc/wp-content/uploads/2022/07/shirakawa-go-gokayama-japan-825x550.jpg'),
-          //                 fit: BoxFit.cover),
-          //           ),
-          //         );
-          //       }),
-          // )
         ],
       ),
     ));

@@ -30,7 +30,7 @@ class _MyMenuState extends State<MyMenu> {
           type: BottomNavigationBarType.fixed,
           backgroundColor: const Color.fromARGB(255, 90, 163, 223),
           selectedItemColor: Colors.white,
-          selectedLabelStyle: GoogleFonts.notoSansThai(),
+          selectedLabelStyle: GoogleFonts.notoSans(),
           currentIndex: _selectedIndex,
           onTap: (value) {
             setState(() {

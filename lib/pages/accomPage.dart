@@ -65,7 +65,7 @@ class AccommodationPage extends StatelessWidget {
               // Recommended Hotel
               Row(
                 children: [
-                  Text('Recommended Hotel',
+                  Text('Recommended',
                       style: GoogleFonts.grandstander(
                           fontSize: 20, fontWeight: FontWeight.bold)),
                   const Spacer(),

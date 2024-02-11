@@ -87,7 +87,7 @@ class TravelPage extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Osaka',
+                              Text('Osaka - Nagoya',
                                   style: GoogleFonts.grandstander(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold)),
@@ -96,7 +96,7 @@ class TravelPage extends StatelessWidget {
                               ),
                               Text(
                                 'นั่งรถไฟจากโอซาก้าหรือนาโกย่ามาลงที่เมืองคานาซาวาแล้วต่อรถบัสไปยังหมู่บ้านชิราคาวาโกะ',
-                                style: GoogleFonts.grandstander(
+                                style: GoogleFonts.notoSansThai(
                                     fontSize: 15,
                                     fontWeight: FontWeight.normal),
                               )
@@ -131,8 +131,8 @@ class TravelPage extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Nagoya',
-                                  style: GoogleFonts.notoSans(
+                              Text('Takahayama',
+                                  style: GoogleFonts.grandstander(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold)),
                               const SizedBox(
@@ -140,7 +140,7 @@ class TravelPage extends StatelessWidget {
                               ),
                               Text(
                                 'นั่งรถไฟเข้าเมืองทาคายาม่า แล้วต่อรถบัสไปยังหมู่บ้านชิราคาวาโกะ',
-                                style: GoogleFonts.notoSans(
+                                style: GoogleFonts.notoSansThai(
                                     fontSize: 15,
                                     fontWeight: FontWeight.normal),
                               )
