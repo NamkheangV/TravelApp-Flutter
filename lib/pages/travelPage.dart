@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TravelPage extends StatelessWidget {
   const TravelPage({super.key});
@@ -11,9 +12,8 @@ class TravelPage extends StatelessWidget {
       height: double.maxFinite,
       child: Stack(
         children: [
+          // Map
           Positioned(
-            left: 0,
-            right: 0,
             child: Container(
               width: double.maxFinite,
               height: 400,
@@ -24,17 +24,133 @@ class TravelPage extends StatelessWidget {
                       fit: BoxFit.cover)),
             ),
           ),
+
+          // How to Travel
           Positioned(
-              left: 430,
-              right: 0,
+              top: 380,
+              left: 0,
               child: Container(
+                height: 500,
                 width: MediaQuery.of(context).size.width,
-                height: 400,
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 36, 32, 31),
-                    borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        bottomLeft: Radius.circular(20))),
+                padding: const EdgeInsets.all(20),
+                decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(30),
+                        topRight: Radius.circular(30))),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        const SizedBox(
+                          width: 15,
+                        ),
+                        Text(
+                          'How to Travel',
+                          style: GoogleFonts.grandstander(
+                              fontSize: 32, fontWeight: FontWeight.bold),
+                        ),
+                        const Spacer(),
+                        const Icon(
+                          Icons.search,
+                          color: Colors.black,
+                          size: 30,
+                        ),
+                        const SizedBox(
+                          width: 15,
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+
+                    // Travel 1
+                    Row(
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 180,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            image: const DecorationImage(
+                                image: NetworkImage(
+                                    'https://www.japan-guide.com/g19/740/2015_01.jpg'),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          width: 180,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Osaka',
+                                  style: GoogleFonts.grandstander(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'นั่งรถไฟจากโอซาก้าหรือนาโกย่ามาลงที่เมืองคานาซาวาแล้วต่อรถบัสไปยังหมู่บ้านชิราคาวาโกะ',
+                                style: GoogleFonts.grandstander(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.normal),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 25,
+                    ),
+
+                    // Travel 2
+                    Row(
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 180,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            image: const DecorationImage(
+                                image: NetworkImage(
+                                    'https://www.japan-guide.com/g19/740/bus.jpg'),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          width: 180,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Nagoya',
+                                  style: GoogleFonts.notoSans(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'นั่งรถไฟเข้าเมืองทาคายาม่า แล้วต่อรถบัสไปยังหมู่บ้านชิราคาวาโกะ',
+                                style: GoogleFonts.notoSans(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.normal),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ))
         ],
       ),
